@@ -1,0 +1,804 @@
+/*
+*	############################################################################
+*	
+*	Repute Blog - Responsive Bootstrap Blog Theme
+*	---------------------------------------------------------------------
+*
+*	Version		1.0
+*	Author		The Develovers
+*	Copyright	Copyright 2016 The Develovers
+*
+*	############################################################################
+*/
+
+@import "partials/base";
+@import "partials/general";
+@import "vendors/slick";
+@import "vendors/slick-theme-repute";
+
+
+/* wrapper */
+.wrapper {
+	background: #f5f5f5;
+}
+
+/* top bar */
+.topbar {
+	text-align: right;
+	padding-top: 25px;
+
+	.top-nav,
+	.searchbox {
+		@include inline-block;
+	}
+
+	.top-nav {
+		margin-bottom: 0;
+	}
+
+	.searchbox {
+		margin-left: 10px;
+	}
+
+	@include max-screen($break-medium) {
+		padding-top: 0;
+
+		.searchbox {
+			display: block;
+			width: 100%;
+			margin: 15px 0 10px 0;
+		}
+	}
+
+	@include max-screen($break-small) {
+		text-align: center;
+		margin-bottom: 10px;
+	}
+}
+
+ul.top-nav {
+	margin-bottom: 0;
+
+	> li > a {
+		color: #656565;
+
+		&:hover, &:focus {
+			color: darken(#656565, 10%);
+		}
+	}
+}
+
+.searchbox {
+	width: 15%;
+
+	input[type="text"] {
+		@include border-left-radius(15px);
+		@include box-shadow(none);
+
+		padding: 0 12px;
+		background-color: #f5f5f5;
+		border: none;
+	}
+
+	.input-group-sm > .input-group-btn > .btn {
+		@include border-right-radius(15px);
+
+		border: none;
+		background-color: #f5f5f5;
+
+		&:active, &.active {
+			@include box-shadow(none);
+		}
+	}
+}
+
+.navbar-default {
+	@include box-shadow(0 3px 6px 0 rgba(224, 224, 224, 0.5));
+
+	margin-bottom: 0;
+	border-bottom: none;
+	background-color: #fff;
+
+	.navbar-toggle {
+		border: none;
+
+		&:hover, &:focus {
+			background-color: darken($accent-color, 8%);
+		}
+
+		i {
+			color: #fff;
+			font-size: 21px;
+			line-height: 25px;
+		}
+	}
+
+	.navbar-nav > li > a {
+		color: #878787;
+
+		&:hover, &:focus {
+			color: $accent-color;
+		}
+	}
+
+	.navbar-nav > li.active > a {
+		background-color: transparent;
+		color: $accent-color;
+
+		&:hover, &:focus {
+			background-color: transparent;
+		}
+	}
+
+	.navbar-brand:hover, .navbar-brand:focus {
+		background-color: $accent-color;
+	}
+
+	.navbar-collapse {
+		border: none;
+	}
+
+	@include max-screen($break-medium) {
+		padding: 10px 0;
+	}
+}
+
+.navbar > .container .navbar-brand {
+	margin-left: 0;
+
+	@include max-screen($break-small) {
+		margin-left: 15px;
+	}
+}
+
+/* logo style here is just for demo purpose, you may adjust its style, dimension and position */
+.navbar-brand {
+	position: absolute;
+	top: 50%;
+	height: 42px;
+	margin-top: -21px;
+	padding: 8px;
+	background-color: $accent-color;
+
+	img {
+		width: auto;
+	}
+
+	@include max-screen($break-medium) {
+		position: relative;
+		top: 30px;
+		height: auto;
+
+		img {
+			width: 90px;
+		}
+	}
+}
+
+.navbar-toggle {
+	@include border-radius(2px);
+
+	background-color: $accent-color;
+	padding: 5px 10px;
+}
+
+.navbar-nav {
+	margin-top: 5px;
+	
+	&.navbar-right {
+		margin-right: -25px;
+	}
+
+	> li > a {
+		font-size: 16px;
+		font-weight: 600;
+		padding-bottom: 25px;
+
+		i {
+			font-size: 18px;
+			line-height: 14px;
+			position: relative;
+		}
+	}
+
+	.dropdown-menu {
+		@include border-radius(0);
+		@include box-shadow(2px 2px 15px rgba(0, 0, 0, 0.175));
+
+		padding-top: 10px;
+		padding-bottom: 10px;
+		min-width: 200px;
+		top: 99%;
+		border: none;
+		border-top: 2px solid darken($accent-color, 10%);
+
+		> li > a {
+			padding: 10px 20px;
+			font-size: 13px;
+
+			&:hover, &:focus {
+				background-color: #6A737E;
+				color: #fff;
+			}
+		}
+	}
+
+	@include max-screen($break-medium) {
+		> li > a.btn-open-searchbox {
+			display: none;
+		}
+
+		.dropdown-menu {
+			padding-top: 0;
+
+			> li > a {
+				text-align: center;
+			}
+		}
+	}
+}
+
+.navbar-fixed-top .navbar-nav {
+	margin-right: -10px;
+}
+
+/* mobile navigation */
+@include max-screen($break-medium) {
+	.navbar-toggle {
+		display: block;
+	}
+
+	.navbar-collapse.collapse {
+		display: none !important;
+		border: none;
+	}
+	
+	.navbar-collapse.collapse,
+	.navbar-collapse.collapsing {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.navbar-collapse.collapse.in {
+		display: block !important;
+		overflow-y: auto !important;
+	}
+
+	.navbar-nav {
+		margin-left: 0;
+		margin-right: 0;
+
+		> li > a {
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+	}
+
+	.navbar-header,
+	.navbar-nav,
+	.navbar-nav > li {
+		float: none !important;
+	}
+
+	.navbar-default .navbar-nav .open .dropdown-menu {
+		@include box-shadow(none);
+
+		position: static;
+		float: none;
+		width: auto;
+		margin-top: 0;
+		border: none;
+
+		> li {
+			> a {
+				padding: 5px 15px 5px 25px;
+				text-align: left;
+				color: #878787;
+			}
+
+			&.active > a {
+				color: inherit;
+				background-color: #E7E7E7;
+			}
+		}
+	}
+}
+
+/* make dropdown in main menu openend on hover */
+@include min-screen($break-medium) {
+	.navbar .dropdown:hover > .dropdown-menu {
+		display: block;
+	}
+}
+
+.main-content {
+	padding: 50px 0;
+
+	@include max-screen($break-small) {
+		padding-bottom: 0;
+	}
+}
+
+section {
+	@include max-screen($break-small) {
+		margin-bottom: 30px;
+	}
+}
+
+.section-heading {
+	margin-bottom: 30px;
+	color: #878787;
+	font-size: 22px;
+	font-weight: 700;
+
+	&:after {
+		display: block;
+		content: ' ';
+		font-weight: 300;
+		height: 3px;
+		width: 65px;
+		margin-top: 10px;
+		background-color: #878787;
+	}
+
+	@include max-screen($break-small) {
+		float: none !important;
+		margin-bottom: 20px;
+	}
+}
+
+.see-all-posts {
+	line-height: 42px;
+
+	@include max-screen($break-small) {
+		float: none !important;
+		display: block;
+		margin-bottom: 20px;
+		line-height: 24px;
+	}
+}
+
+/* post entry */
+.post-entry {
+	margin-bottom: 50px;
+
+	.post-title {
+		margin: 20px 0 10px 0;
+		font-size: 18px;
+		font-weight: 600;
+
+		a {
+			color: #878787;
+
+			&:hover, &:focus {
+				color: $accent-color;
+			}
+		}
+	}
+
+	.post-meta {
+		font-size: 12px;
+		color: #adadad;
+
+		> span {
+			margin-right: 10px;
+		}
+
+		i {
+			font-size: 14px;
+		}
+
+		a {
+			color: #adadad;
+
+			&:hover, &:focus {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.read-more {
+		&:hover, &:focus {
+			text-decoration: underline;
+		}
+	}
+
+	.post-excerpt {
+		margin-bottom: 20px;
+		font-size: 14px;
+	}
+}
+
+/* featured post */
+.featured-post {
+	margin-bottom: 60px;
+
+	.post-title {
+		margin-top: 30px;
+		margin-bottom: 15px;
+		font-weight: 700;
+		font-size: 26px;
+	}
+
+	.post-excerpt {
+		font-size: 14px;
+		line-height: 24px;
+		margin-bottom: 20px;
+	}
+
+	.post-meta {
+		font-size: 12px;
+
+		i {
+			margin-right: 3px;
+		}
+	}
+
+	@include max-screen($break-small) {
+		.post-meta {
+			.author, .comment {
+				display: none;
+			}
+		}
+	}
+}
+
+.post-entry-simple {
+	.post-title {
+		margin-top: 10px;
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	@include max-screen($break-small) {
+		.post-title {
+			font-size: 22px;
+			line-height: 28px;
+		}
+	}
+}
+
+/* sidebar widget */
+.widget {
+	margin-bottom: 80px;
+
+	.section-heading {
+		margin-bottom: 30px;
+	}
+}
+
+.widget-title {
+	font-size: 22px;
+	line-height: 24px;
+}
+
+.recommended-posts {
+	> li {
+		margin-bottom: 10px;
+	}
+	
+	.post-title {
+		font-size: 14px;
+		line-height: 18px;
+	}
+}
+
+.post-entry-sidebar {
+	.post-title {
+		a {
+			color: #878787;
+
+			&:hover, &:focus {
+				color: $accent-color;
+			}
+		}
+	}
+
+	.timestamp {
+		font-size: 12px;
+		color: #adadad;
+	}
+
+	.left {
+		float: left;
+	}
+
+	.right {
+		padding-left: 90px;
+	}
+}
+
+/* newsletter */
+.newsletter-form {
+
+	.input-group-lg > .form-control,
+	.input-group-lg > .input-group-btn > .btn {
+		border: none;
+		outline: none;
+	}
+
+	.input-group-lg > .form-control {
+		@include border-left-radius(3px);
+
+		background-color: #E8E8E8;
+		font-size: 12px;
+		border: none;
+
+		&:focus {
+			@include box-shadow(none);
+		}
+	}
+
+	.input-group-lg > .input-group-btn > .btn {
+		@include border-right-radius(3px);
+
+		min-width: 105px;
+		font-size: 14px;
+		background-color: $accent-color;
+
+		&:hover, &:focus {
+			background-color: darken($accent-color, 5%);
+		}
+
+		i {
+			display: none;
+		}
+
+		&.loading {
+			i {
+				display: inline;
+			}
+
+			span {
+				display: none;
+			}
+		}
+	}
+
+	.input-group-btn:last-child > .btn {
+		margin-left: 0;
+	}
+
+	.alert {
+		@include transition(all .3s ease-out);
+		@include opacity(0);
+
+		padding: 5px;
+		margin-bottom: 0;
+		border: none;
+		font-size: 12px;
+		background: transparent;
+		color: #fff;
+		font-weight: 600;
+
+		&.active {
+			@include opacity(1);
+		}
+
+		&.alert-danger {
+			color: #DF6967;
+		}
+
+		&.alert-success {
+			color: #69C76A;
+		}
+
+		a {
+			color: $accent-color;
+			text-decoration: underline;
+
+			&:hover, &:focus {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+@include max-screen($break-small) {
+
+	.newsletter-form {
+		width: 100%;
+
+		.input-group-lg > .form-control,
+		.input-group-lg > .input-group-btn > .btn {
+			padding: 10px;
+			font-size: 14px;
+		}
+
+		.input-group-lg > .input-group-btn > .btn {
+			min-width: inherit;
+		}
+	}
+}
+
+.tagcloud {
+	a {
+		@include inline-block;
+		@include border-radius(3px);
+
+		margin-bottom: 10px;
+		margin-right: 8px;
+		padding: 5px 8px;
+		border: 1px solid #7b7b7b;
+		color: inherit;
+		
+		&:hover {
+			text-decoration: none;
+			color: #f5f5f5;
+			background-color: #7b7b7b;
+		}
+	}
+}
+
+.twitter-stream #tweets {
+	ul > li {
+		margin-bottom: 35px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.avatar {
+		@include border-radius(50%);
+
+		width: 35px;
+		margin-right: 8px;
+		float: left;
+	}
+
+	.tweet-infos {
+		font-size: 12px;
+		margin-bottom: 5px;
+
+		a {
+			color: inherit;
+		}
+
+		.full-name {
+			margin-right: 8px;
+		}
+	}
+
+	.tweet-content {
+		font-size: 12px;
+		padding-left: 45px;
+		margin-bottom: 5px;
+
+		.tco-hidden{
+			display: none;
+		}
+	}
+
+	.tweet-time {
+		padding-left: 45px;
+	}
+}
+
+/* social connect icons */
+ul.social-icons {
+	li {
+		margin-bottom: 10px;
+
+		a {
+			@include border-radius(3px);
+
+			display: block;
+			width: 50px;
+			height: 50px;
+			font-size: 24px;
+			color: #fff;
+			text-align: center;
+
+			&.facebook-bg {
+				&:hover, &:focus {
+					background-color: darken($facebook-color, 5%);
+				}
+			}
+			
+			&.twitter-bg {
+				&:hover, &:focus {
+					background-color: darken($twitter-color, 5%);
+				}
+			}
+
+			&.googleplus-bg {
+				&:hover, &:focus {
+					background-color: darken($googleplus-color, 5%);
+				}
+			}
+
+			&.rss-bg {
+				&:hover, &:focus {
+					background-color: darken($rss-color, 5%);
+				}
+			}
+
+			i {
+				position: relative;
+				top: 8px;
+			}
+		}
+	}
+}
+
+/* footer */
+footer {
+	background-color: #f3f3f3;
+	border-top: 1px solid #e1e1e1;
+	color: #878787;
+
+	@include max-screen($break-small) {
+		text-align: center;
+	}
+}
+
+ul.separated-nav {
+	> li > a {
+		font-size: 12px;
+		color: #878787;
+		font-weight: 600;
+
+		&:hover, &:focus {
+			text-decoration: underline;
+		}
+	}
+
+	> li:after {
+		content: "|";
+		margin-left: 13px;
+		font-size: 16px;
+		color: #dadada;
+	}
+
+	> li:last-child:after {
+		display: none;
+	}
+
+	@include max-screen($break-small) {
+
+		> li {
+			display: block;
+			margin-bottom: 8px;
+
+			&:after {
+				display: none;
+			}
+		}
+	}
+}
+
+.copyright {
+	font-size: 12px;
+}
+
+.back-to-top {
+	@include border-radius(50%);
+	@include transition(all 0.2s ease-in);
+
+	width: 60px;
+	height: 60px;
+	position: fixed;
+	right: 10px;
+	bottom: 25px;
+	z-index: 9999;
+	text-align: center;
+	cursor: pointer;
+	background-color: rgba(#000, 0.3);
+
+	&:hover, &:focus {
+		background-color: rgba(#000, 0.5);
+	}
+
+	a {
+		font-size: 40px;
+		line-height: 52px;
+		color: #fff;
+	}
+
+	@include max-screen($break-small) {
+		display: none !important;
+	}
+}
+
+

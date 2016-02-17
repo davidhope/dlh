@@ -1,0 +1,46 @@
+/* Skin: Golden Rod */
+/* ----------------------------------------------------- */
+/* BLOG HOME PAGE V2
+/* style affecting blog template v2
+/* ----------------------------------------------------- */
+a {
+  color: #DAA520;
+}
+a:hover, a:focus {
+  color: #b68a1b;
+  text-decoration: none;
+}
+
+.navbar-default .navbar-brand {
+  background-color: #DAA520;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  background-color: #DAA520;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #DAA520;
+}
+.navbar-default .navbar-nav > li.active > a {
+  color: #DAA520;
+}
+.navbar-default .navbar-nav > li.active > a:hover, .navbar-default .navbar-nav > li.active > a:focus {
+  color: #DAA520;
+}
+
+.navbar-nav .dropdown-menu {
+  border-top-color: #DAA520;
+}
+
+.post-entry .post-title a:hover, .post-entry .post-title a:focus,
+.post-entry-sidebar .post-title a:hover,
+.post-entry-sidebar .post-title a:focus {
+  color: #DAA520;
+}
+
+.newsletter-form .input-group-lg > .input-group-btn > .btn {
+  background-color: #DAA520;
+}
+.newsletter-form .input-group-lg > .input-group-btn > .btn:hover, .newsletter-form .input-group-lg > .input-group-btn > .btn:focus {
+  background-color: #DAA520;
+}

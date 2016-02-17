@@ -1,0 +1,45 @@
+/* Skin: Indian Red */
+/* ----------------------------------------------------- */
+/* BLOG HOME PAGE V1
+/* style affecting blog template v1
+/* ----------------------------------------------------- */
+a {
+  color: #CD5C5C;
+}
+a:hover, a:focus {
+  color: #c33d3d;
+  text-decoration: none;
+}
+
+/* logo background color here is just for demo purpose, you may want to remove it for your logo */
+.navbar-brand {
+  background-color: #CD5C5C;
+}
+.navbar-brand .arrow-right:before {
+  border-left-color: #CD5C5C;
+}
+
+.navbar-default .navbar-brand:hover:hover, .navbar-default .navbar-brand:hover:focus,
+.navbar-default .navbar-brand:focus:hover,
+.navbar-default .navbar-brand:focus:focus {
+  background-color: #CD5C5C;
+}
+
+.featured-post .post-category {
+  background-color: #d77b7b;
+}
+
+.navbar-nav .dropdown-menu {
+  border-top-color: #CD5C5C;
+}
+
+.newsletter .newsletter-form .input-group-lg > .input-group-btn > .btn {
+  background-color: #CD5C5C;
+}
+.newsletter .newsletter-form .input-group-lg > .input-group-btn > .btn:hover, .newsletter .newsletter-form .input-group-lg > .input-group-btn > .btn:focus {
+  background-color: #CD5C5C;
+}
+
+.repute-css-logo {
+  background-color: #CD5C5C;
+}

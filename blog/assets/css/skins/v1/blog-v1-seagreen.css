@@ -1,0 +1,45 @@
+/* Skin: Seagreen */
+/* ----------------------------------------------------- */
+/* BLOG HOME PAGE V1
+/* style affecting blog template v1
+/* ----------------------------------------------------- */
+a {
+  color: #3F7577;
+}
+a:hover, a:focus {
+  color: #315b5c;
+  text-decoration: none;
+}
+
+/* logo background color here is just for demo purpose, you may want to remove it for your logo */
+.navbar-brand {
+  background-color: #3F7577;
+}
+.navbar-brand .arrow-right:before {
+  border-left-color: #3F7577;
+}
+
+.navbar-default .navbar-brand:hover:hover, .navbar-default .navbar-brand:hover:focus,
+.navbar-default .navbar-brand:focus:hover,
+.navbar-default .navbar-brand:focus:focus {
+  background-color: #3F7577;
+}
+
+.featured-post .post-category {
+  background-color: #4d8f92;
+}
+
+.navbar-nav .dropdown-menu {
+  border-top-color: #3F7577;
+}
+
+.newsletter .newsletter-form .input-group-lg > .input-group-btn > .btn {
+  background-color: #3F7577;
+}
+.newsletter .newsletter-form .input-group-lg > .input-group-btn > .btn:hover, .newsletter .newsletter-form .input-group-lg > .input-group-btn > .btn:focus {
+  background-color: #3F7577;
+}
+
+.repute-css-logo {
+  background-color: #3F7577;
+}

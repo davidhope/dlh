@@ -1,0 +1,566 @@
+/* ----------------------------------------------------- */
+/* HERO UNIT 
+/* Types: slider with animated object, default slider
+/* ----------------------------------------------------- */
+
+.hero-unit-animated {
+	padding: 100px 0;
+	color: #fff;
+
+	background: {
+		image: image-url('hero-unit-bg.png');
+		repeat: no-repeat;
+		position: center -75px;
+	}
+
+	.hero-heading {
+		font-family: $heading-font-family;
+		font-size: 42px;
+		font-weight: 300;
+		color: #fff;
+	}
+
+	.lead {
+		font-size: 24px;
+	}
+
+	.hero-button {
+		padding: 10px 40px;
+		margin-top: 24px;
+		background-color: $accent-color;
+		border: none;
+
+		&:hover, &:focus {
+			background-color: darken($accent-color, 3%);
+		}
+	}
+
+	@include max-screen($break-large) {
+		.hero-left {
+			max-width: 100%;
+			float: none !important;
+			text-align: center;
+		}
+
+		.hero-heading {
+			font-size: 36px;
+		}
+
+		.lead {
+			font-size: 18px;
+		}
+
+		.hero-right {
+			display: none;
+		}
+	}
+}
+
+.hero-left {
+	max-width: 50%;
+}
+
+/* carousel */
+.carousel-control {
+	@include transition(all 0.2s ease-in-out);
+
+	position: absolute;
+	top: 50%;
+	margin-top: -22px;
+	bottom: inherit;
+	width: 45px;
+	height: 45px;
+	background: #777; 
+
+	&:hover {
+		background: darken(#777, 5%);
+	}
+
+	&.left, &.right {
+		background-image: none;
+	}
+
+	.fa {
+		line-height: 45px;
+	}
+}
+
+.carousel-indicators {
+	bottom: -90px;
+
+	> li {
+		@include opacity(0.5);
+
+		background-color: #fff;
+
+		&.active {
+			@include opacity(1);
+		}
+	}
+}
+
+/* hero unit slider */
+.hero-unit-slider {
+	.carousel-inner > .item {
+		overflow: hidden;
+	}
+	
+	.carousel-caption {
+		bottom: inherit;
+		top: 8em;
+		text-shadow: none;
+	}
+
+	.hero-heading {
+		font-size: 50px;
+		color: #fff;
+	}
+
+	.hero-button {
+		border: 3px solid #fff;
+		color: #fff;
+
+		&:hover, &:focus {
+			background: $accent-color;
+			color: #fff;
+		}
+	}
+
+	.carousel-indicators {
+		bottom: 0;
+	}
+
+	.carousel-control {
+		background: rgba(#000, 0.2);
+
+		&:hover {
+			background: rgba(#000, 0.3);
+		}
+	}
+
+	@include screen($break-large, $break-xlarge) {
+		.carousel-caption {
+			top: 10em;
+		}
+
+		&.slider-responsive {
+			.carousel-caption {
+				top: 3em;
+			}
+		}
+	}
+
+	@include max-screen($break-large) {
+		.carousel-inner > .item > img {
+			max-width: inherit;
+		}
+
+		&.slider-responsive {
+			.slick-dots {
+				display: none !important;
+			}
+
+			.carousel-caption {
+				top: 2em;
+			}
+
+			.hero-heading {
+				font-size: 26px;
+			}
+		}
+	}
+
+	@include max-screen($break-small) {
+		.carousel-caption {
+			top: 11em;
+		}
+
+		.hero-heading {
+			font-size: 28px;
+		}
+
+		.lead {
+			font-size: 16px;
+		}
+
+		.hero-button {
+			font-size: 13px;
+		}
+
+		&.slider-responsive {
+			.slick-dots {
+				display: none !important;
+			}
+
+			.carousel-caption {
+				top: 0;
+			}
+		}
+	}
+
+	@include max-screen($break-xsmall) {
+		&.slider-responsive {
+			margin-bottom: 30px;
+
+			/* slider image can has enough height and keeping the center focal point */
+			.slick-slide img {
+				max-width: 200%;
+				position: relative;
+				right: 50%;
+			}
+
+			.hero-heading {
+				font-size: 24px;
+			}
+
+			.hero-button {
+				font-size: 11px;
+			}
+		}
+	}
+
+	/* hero unit with slick carousel */
+	.slick-carousel {
+		.slick-slider {
+			margin-bottom: 0;
+		}
+
+		.slick-prev, .slick-next {
+			top: 50%;
+			margin-top: -22.5px;
+			width: 45px;
+			height: 45px;
+
+			&:hover, &:focus {
+				background: rgba(#000, 0.3);
+			}
+		}
+
+		.slick-prev {
+			left: 0;
+		}
+
+		.slick-dots {
+			position: absolute;
+			bottom: 20px;
+
+			button {
+				@include opacity(0.5);
+				
+				background-color: #fff;
+			}
+
+			.slick-active button {
+				@include opacity(1);
+			}
+		}
+	}
+}
+
+
+/* fullscreen hero unit */
+html.fullscreen, 
+html.fullscreen body,
+html.fullscreen .wrapper {
+	height: 100%;
+}
+
+.hero-unit-fullscreen {
+	position: relative;
+	height: 100%;
+	font-size: 2em;
+	text-align: center;
+	color: #fff;
+
+	background: {
+		image: image-url('fullscreen-bg.jpg');
+		repeat: no-repeat;
+		position: center;
+	}
+
+	.overlay {
+		@include opacity(0.9);
+
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgb(87, 163, 255);
+	}
+
+	.container {
+		position: relative;
+	}
+
+	.left {
+		width: 100%;
+		position: relative;
+		top: 7em;
+	}
+
+	.hero-heading {
+		margin-bottom: 20px;
+		font-size: 3em;
+		font-weight: 300;
+		color: #fff;
+	}
+
+	.lead {
+		font-size: 24px;
+		margin-bottom: 60px;
+	}
+	
+	.hero-button {
+		padding: 15px 30px;
+		background-color: transparent;
+		border-color: #fff;
+		color: #fff;
+
+		&:hover, &:focus {
+			background-color: #4E98F3;
+			border-color: #4E98F3;
+		}
+	}
+
+	.down-arrow {
+		position: absolute;
+		left: 50%;
+		margin-left: -30px;
+		text-align: center;
+		display: none;
+
+		@include min-screen($break-large) {
+			display: block;
+			bottom: 1em;
+		}
+
+		a {
+			@include border-radius(50%);
+			@include opacity(0.3);
+			@include transition(all 0.2s ease-out);
+
+			display: block;
+			width: 60px;
+			height: 60px;
+			line-height: 60px;
+			color: #fff;
+			border: 2px solid #fff;
+
+			&:hover, &:focus {
+				@include opacity(0.8);
+			}
+		}
+	}
+
+	@include max-screen($break-xsmall) {
+		.lead {
+			font-size: 18px;
+			font-weight: 400;
+		}
+	}
+
+	@include screen($break-xsmall + 1px, $break-small - 1px) {
+		.left {
+			top: 4em;
+		}
+	}
+
+	@include max-screen($break-small) {
+		.hero-heading {
+			font-size: 1.5em;
+		}
+	}
+
+	@include min-screen($break-small) {
+		.left {
+			top: 12em;
+		}
+	}
+
+	@include min-screen($break-medium) {
+		text-align: left;
+
+		.left {
+			top: 10em;
+		}
+	}
+
+	@include min-screen($break-large) {
+		font-size: 2.2em;
+	}
+}
+
+/* fullscreen hero slider */
+body.fullscreen-slider .navbar {
+	z-index: 2;
+}
+
+.hero-unit-fullscreen-slider {
+	.overlay {
+		@include opacity(0.9);
+
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(#9B9B9B, 0.9);
+	}
+
+	.slide-content {
+		color: #fff;
+		top: 50%;
+		position: relative;
+		margin-top: -12em;
+	}
+
+	.hero-heading {
+		font-size: 6em;
+		color: #fff;
+	}
+
+	.lead {
+		font-size: 36px;
+		margin-bottom: 50px;
+	}
+
+	.btn-hero {
+		@include border-radius(30px);
+
+		color: #fff;
+		font-size: 14px;
+		padding: 14px 28px;
+	}
+
+	.arrow-nav {
+		width: 100%;
+		position: absolute;
+		top: 50%;
+		margin-top: -30px;
+
+		a {
+			@include transition(all .3s ease-out);
+			@include border-radius(50%);
+
+			width: 60px;
+			height: 60px;
+			position: absolute;
+			text-align: center;
+			line-height: 75px;
+			color: #fff;
+			background-color: rgba(#000, 0.2);
+
+			&:hover {
+				background-color: rgba(#000, 0.5);
+			}
+		}
+
+		.arrow-left {
+			left: 15px;
+		}
+
+		.arrow-right {
+			right: 15px;
+		}
+
+		i {
+			font-size: 36px;
+		}
+	}
+
+	.pager {
+		width: 100%;
+		position: absolute;
+		bottom: 20px;
+		text-align: center;
+
+		a {
+			@include transition(all .3s ease-out);
+			@include border-radius(50%);
+
+			background-color: rgba(#fff, 0.5);
+			border: 5px solid rgba(#000, 0.2);
+			width: 20px;
+			height: 20px;
+			display: inline-block;
+			text-indent: -9999px;
+			margin: 0 3px;
+
+			&.activeSlide {
+				border-color: rgba(#000, 0.5);
+			}
+		}
+	}
+
+	@include max-screen($break-large) {
+		.hero-heading {
+			font-size: 4.5em;
+		}
+
+		.lead {
+			font-size: 30px;
+		}
+
+		.slide-content {
+			padding-left: 70px;
+			padding-right: 70px;
+		}
+	}
+
+	@include max-screen($break-medium) {
+		.hero-heading {
+			font-size: 3.5em;
+		}
+
+		.lead {
+			font-size: 28px;
+		}
+
+		.slide-content {
+			padding-left: 70px;
+			padding-right: 70px;
+		}
+	}
+
+	@include max-screen($break-small) {
+		.hero-heading {
+			font-size: 2em;
+		}
+
+		.lead {
+			font-size: 22px;
+		}
+
+		.slide-content {
+			text-align: center;
+			margin-top: -7em;
+		}
+	}
+}
+
+div.mc-image {
+	z-index: 0 !important;
+
+	/*NOTE: Mozilla flickers when fading and using 'all', so we have to be specific with what property we want to transition:
+	 	If you are using fading transitions, use 'opacity: */
+	-webkit-transition: opacity 1s ease-in-out; 
+	-moz-transition: opacity 1s ease-in-out; 
+	-o-transition: opacity 1s ease-in-out; 
+	transition: opacity 1s ease-in-out;
+	
+	/*If you are using horizontal slide transitions, use the following CSS:
+	-webkit-transition: left 1s ease-in-out; 
+	-moz-transition: left 1s ease-in-out; 
+	-o-transition: left 1s ease-in-out; 
+	transition: left 1s ease-in-out;*/
+	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position:center center;
+	background-repeat:no-repeat;
+	height:100%;
+	overflow:hidden;
+	width:100%;
+}
+

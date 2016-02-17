@@ -1,0 +1,50 @@
+/* ----------------------------------------------------- */
+/* BLOG HOME PAGE V1
+/* style affecting blog template v1
+/* ----------------------------------------------------- */
+
+
+a {
+	color: $accent-color;
+
+	&:hover, &:focus {
+		color: $link-hover-color;
+		text-decoration: none;
+	}
+}
+
+/* logo background color here is just for demo purpose, you may want to remove it for your logo */
+.navbar-brand {
+	background-color: $accent-color;
+
+	.arrow-right:before {
+		border-left-color: $accent-color;
+	}
+}
+
+.navbar-default .navbar-brand:hover, 
+.navbar-default .navbar-brand:focus {
+	&:hover, &:focus {
+		background-color: $accent-color;
+	}
+}
+
+.featured-post .post-category {
+	background-color: lighten($accent-color, 8%);
+}
+
+.navbar-nav .dropdown-menu {
+	border-top-color: $accent-color;
+}
+
+.newsletter .newsletter-form .input-group-lg > .input-group-btn > .btn {
+	background-color: $accent-color;
+
+	&:hover, &:focus {
+		background-color: $accent-color;
+	}
+}
+
+.repute-css-logo {
+	background-color: $accent-color;
+}

@@ -1,0 +1,46 @@
+/* Skin: Light Green */
+/* ----------------------------------------------------- */
+/* BLOG HOME PAGE V2
+/* style affecting blog template v2
+/* ----------------------------------------------------- */
+a {
+  color: #8AA026;
+}
+a:hover, a:focus {
+  color: #6e7f1e;
+  text-decoration: none;
+}
+
+.navbar-default .navbar-brand {
+  background-color: #8AA026;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  background-color: #8AA026;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #8AA026;
+}
+.navbar-default .navbar-nav > li.active > a {
+  color: #8AA026;
+}
+.navbar-default .navbar-nav > li.active > a:hover, .navbar-default .navbar-nav > li.active > a:focus {
+  color: #8AA026;
+}
+
+.navbar-nav .dropdown-menu {
+  border-top-color: #8AA026;
+}
+
+.post-entry .post-title a:hover, .post-entry .post-title a:focus,
+.post-entry-sidebar .post-title a:hover,
+.post-entry-sidebar .post-title a:focus {
+  color: #8AA026;
+}
+
+.newsletter-form .input-group-lg > .input-group-btn > .btn {
+  background-color: #8AA026;
+}
+.newsletter-form .input-group-lg > .input-group-btn > .btn:hover, .newsletter-form .input-group-lg > .input-group-btn > .btn:focus {
+  background-color: #8AA026;
+}

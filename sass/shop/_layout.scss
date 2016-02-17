@@ -1,0 +1,20 @@
+/*------------------------------------------------*/
+/*	Layout
+/*------------------------------------------------*/
+
+.shop-main {
+	padding-top: 10px;
+}
+
+.shop-right-content {
+	border: 1px solid #dbdbdb;
+	padding-left: 23em;
+}
+
+.minimal-header {
+	+ .shop-main {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
+

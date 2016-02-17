@@ -1,0 +1,45 @@
+/* Skin: Golden Rod */
+/* ----------------------------------------------------- */
+/* BLOG HOME PAGE V1
+/* style affecting blog template v1
+/* ----------------------------------------------------- */
+a {
+  color: #DAA520;
+}
+a:hover, a:focus {
+  color: #b68a1b;
+  text-decoration: none;
+}
+
+/* logo background color here is just for demo purpose, you may want to remove it for your logo */
+.navbar-brand {
+  background-color: #DAA520;
+}
+.navbar-brand .arrow-right:before {
+  border-left-color: #DAA520;
+}
+
+.navbar-default .navbar-brand:hover:hover, .navbar-default .navbar-brand:hover:focus,
+.navbar-default .navbar-brand:focus:hover,
+.navbar-default .navbar-brand:focus:focus {
+  background-color: #DAA520;
+}
+
+.featured-post .post-category {
+  background-color: #e3b440;
+}
+
+.navbar-nav .dropdown-menu {
+  border-top-color: #DAA520;
+}
+
+.newsletter .newsletter-form .input-group-lg > .input-group-btn > .btn {
+  background-color: #DAA520;
+}
+.newsletter .newsletter-form .input-group-lg > .input-group-btn > .btn:hover, .newsletter .newsletter-form .input-group-lg > .input-group-btn > .btn:focus {
+  background-color: #DAA520;
+}
+
+.repute-css-logo {
+  background-color: #DAA520;
+}

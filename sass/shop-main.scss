@@ -1,0 +1,28 @@
+/*
+*	############################################################################
+*	
+*	Repute - Shop UI for Repute Theme
+*	---------------------------------------------------------------------
+*
+*	Version		1.3 (following main theme version)
+*	Author		The Develovers
+*	Copyright	Copyright 2015 The Develovers
+*
+*	############################################################################
+*/
+
+
+// import general styles
+@import "partials/base";
+@import "shop/layout";
+
+// import third-party
+@import "vendors/prettyPhoto";
+@import "vendors/ion.rangeSlider";
+@import "vendors/ion.rangeSlider.skinHTML5";
+@import "vendors/jquery.bootstrap-touchspin";
+
+// import web elements
+@import "shop/header";
+@import "shop/navigation";
+@import "shop/main-content";

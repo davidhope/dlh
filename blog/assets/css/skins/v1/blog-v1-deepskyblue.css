@@ -1,0 +1,45 @@
+/* Skin: Deep Sky Blue */
+/* ----------------------------------------------------- */
+/* BLOG HOME PAGE V1
+/* style affecting blog template v1
+/* ----------------------------------------------------- */
+a {
+  color: #00BFFF;
+}
+a:hover, a:focus {
+  color: #00a0d6;
+  text-decoration: none;
+}
+
+/* logo background color here is just for demo purpose, you may want to remove it for your logo */
+.navbar-brand {
+  background-color: #00BFFF;
+}
+.navbar-brand .arrow-right:before {
+  border-left-color: #00BFFF;
+}
+
+.navbar-default .navbar-brand:hover:hover, .navbar-default .navbar-brand:hover:focus,
+.navbar-default .navbar-brand:focus:hover,
+.navbar-default .navbar-brand:focus:focus {
+  background-color: #00BFFF;
+}
+
+.featured-post .post-category {
+  background-color: #29c9ff;
+}
+
+.navbar-nav .dropdown-menu {
+  border-top-color: #00BFFF;
+}
+
+.newsletter .newsletter-form .input-group-lg > .input-group-btn > .btn {
+  background-color: #00BFFF;
+}
+.newsletter .newsletter-form .input-group-lg > .input-group-btn > .btn:hover, .newsletter .newsletter-form .input-group-lg > .input-group-btn > .btn:focus {
+  background-color: #00BFFF;
+}
+
+.repute-css-logo {
+  background-color: #00BFFF;
+}

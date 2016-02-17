@@ -1,0 +1,46 @@
+/* Skin: Orange */
+/* ----------------------------------------------------- */
+/* BLOG HOME PAGE V2
+/* style affecting blog template v2
+/* ----------------------------------------------------- */
+a {
+  color: #FF4500;
+}
+a:hover, a:focus {
+  color: #d63a00;
+  text-decoration: none;
+}
+
+.navbar-default .navbar-brand {
+  background-color: #FF4500;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  background-color: #FF4500;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #FF4500;
+}
+.navbar-default .navbar-nav > li.active > a {
+  color: #FF4500;
+}
+.navbar-default .navbar-nav > li.active > a:hover, .navbar-default .navbar-nav > li.active > a:focus {
+  color: #FF4500;
+}
+
+.navbar-nav .dropdown-menu {
+  border-top-color: #FF4500;
+}
+
+.post-entry .post-title a:hover, .post-entry .post-title a:focus,
+.post-entry-sidebar .post-title a:hover,
+.post-entry-sidebar .post-title a:focus {
+  color: #FF4500;
+}
+
+.newsletter-form .input-group-lg > .input-group-btn > .btn {
+  background-color: #FF4500;
+}
+.newsletter-form .input-group-lg > .input-group-btn > .btn:hover, .newsletter-form .input-group-lg > .input-group-btn > .btn:focus {
+  background-color: #FF4500;
+}

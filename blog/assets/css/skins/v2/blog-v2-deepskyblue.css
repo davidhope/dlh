@@ -1,0 +1,46 @@
+/* Skin: Deep Sky Blue */
+/* ----------------------------------------------------- */
+/* BLOG HOME PAGE V2
+/* style affecting blog template v2
+/* ----------------------------------------------------- */
+a {
+  color: #00BFFF;
+}
+a:hover, a:focus {
+  color: #00a0d6;
+  text-decoration: none;
+}
+
+.navbar-default .navbar-brand {
+  background-color: #00BFFF;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  background-color: #00BFFF;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #00BFFF;
+}
+.navbar-default .navbar-nav > li.active > a {
+  color: #00BFFF;
+}
+.navbar-default .navbar-nav > li.active > a:hover, .navbar-default .navbar-nav > li.active > a:focus {
+  color: #00BFFF;
+}
+
+.navbar-nav .dropdown-menu {
+  border-top-color: #00BFFF;
+}
+
+.post-entry .post-title a:hover, .post-entry .post-title a:focus,
+.post-entry-sidebar .post-title a:hover,
+.post-entry-sidebar .post-title a:focus {
+  color: #00BFFF;
+}
+
+.newsletter-form .input-group-lg > .input-group-btn > .btn {
+  background-color: #00BFFF;
+}
+.newsletter-form .input-group-lg > .input-group-btn > .btn:hover, .newsletter-form .input-group-lg > .input-group-btn > .btn:focus {
+  background-color: #00BFFF;
+}

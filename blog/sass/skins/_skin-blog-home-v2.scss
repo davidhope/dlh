@@ -1,0 +1,57 @@
+/* ----------------------------------------------------- */
+/* BLOG HOME PAGE V2
+/* style affecting blog template v2
+/* ----------------------------------------------------- */
+
+
+a {
+	color: $accent-color;
+
+	&:hover, &:focus {
+		color: $link-hover-color;
+		text-decoration: none;
+	}
+}
+
+.navbar-default .navbar-brand {
+	background-color: $accent-color;
+
+	&:hover, &:focus {
+		background-color: $accent-color;
+	}
+}
+
+.navbar-default .navbar-nav > li {
+	> a {
+		&:hover, &:focus {
+			color: $accent-color;
+		}
+	}
+
+	&.active > a {
+		color: $accent-color;
+
+		&:hover, &:focus {
+			color: $accent-color;
+		}
+	}
+}
+
+.navbar-nav .dropdown-menu {
+	border-top-color: $accent-color;
+}
+
+.post-entry .post-title a,
+.post-entry-sidebar .post-title a {
+	&:hover, &:focus {
+		color: $accent-color;
+	}
+}
+
+.newsletter-form .input-group-lg > .input-group-btn > .btn {
+	background-color: $accent-color;
+
+	&:hover, &:focus {
+		background-color: $accent-color;
+	}
+}

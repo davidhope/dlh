@@ -1,0 +1,81 @@
+/* ----------------------------------------------------- */
+/* GENERAL STYLES
+/* ----------------------------------------------------- */
+
+body {
+	font-family: $base-font-family;
+	font-size: 13px;
+	color: $body-text-color;
+	line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 5px;
+	font-family: $heading-font-family;
+	color: $heading-text-color;
+}
+
+section {
+	margin-bottom: 60px;
+}
+
+a {
+	color: $accent-color;
+
+	&:hover, &:focus {
+		color: $link-hover-color;
+		text-decoration: none;
+	}
+}
+
+a, 
+a:focus, 
+a:hover, 
+a:active, 
+button, 
+button:hover {
+	outline: 0 !important;
+}
+
+hr {
+	border-color: #eaeaea;
+}
+
+/* social background color */
+.facebook-bg {
+	background-color: $facebook-color;
+}
+
+.twitter-bg {
+	background-color: $twitter-color;
+}
+
+.googleplus-bg {
+	background-color: $googleplus-color;
+}
+
+.rss-bg {
+	background-color: $rss-color;
+}
+
+
+/* footer */
+footer {
+	font-weight: 300;
+
+	.container {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	@include max-screen($break-small) {
+		.container {
+			padding: 30px 15px;
+		}
+	}
+}
+
+/* helpers */
+.no-margin {
+	margin: 0 !important;
+}

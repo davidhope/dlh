@@ -1,0 +1,45 @@
+/* Skin: Orange */
+/* ----------------------------------------------------- */
+/* BLOG HOME PAGE V1
+/* style affecting blog template v1
+/* ----------------------------------------------------- */
+a {
+  color: #FF4500;
+}
+a:hover, a:focus {
+  color: #d63a00;
+  text-decoration: none;
+}
+
+/* logo background color here is just for demo purpose, you may want to remove it for your logo */
+.navbar-brand {
+  background-color: #FF4500;
+}
+.navbar-brand .arrow-right:before {
+  border-left-color: #FF4500;
+}
+
+.navbar-default .navbar-brand:hover:hover, .navbar-default .navbar-brand:hover:focus,
+.navbar-default .navbar-brand:focus:hover,
+.navbar-default .navbar-brand:focus:focus {
+  background-color: #FF4500;
+}
+
+.featured-post .post-category {
+  background-color: #ff6329;
+}
+
+.navbar-nav .dropdown-menu {
+  border-top-color: #FF4500;
+}
+
+.newsletter .newsletter-form .input-group-lg > .input-group-btn > .btn {
+  background-color: #FF4500;
+}
+.newsletter .newsletter-form .input-group-lg > .input-group-btn > .btn:hover, .newsletter .newsletter-form .input-group-lg > .input-group-btn > .btn:focus {
+  background-color: #FF4500;
+}
+
+.repute-css-logo {
+  background-color: #FF4500;
+}
