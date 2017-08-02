@@ -19,6 +19,9 @@
 @import "vendors/slick";
 @import "vendors/slick-theme-repute";
 @import "vendors/animate";
+@import "vendors/bootstrap-multiselect";
+@import "vendors/datepicker";
+@import "vendors/daterangepicker-bs3";
 
 // import web elements
 @import "partials/navbar";
@@ -26,6 +29,7 @@
 @import "partials/ui-bootstrap-elements";
 @import "partials/ui-elements";
 @import "partials/portfolio";
+@import "partials/blog";
 @import "partials/typography";
 
 // import elements available on pages
