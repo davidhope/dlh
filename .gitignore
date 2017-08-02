@@ -1,2 +1,4 @@
 php/inc/environment-vars.php
 node_modules/
+assets/js/build.js
+assets/js/build.js.map
