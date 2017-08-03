@@ -1,11 +1,12 @@
 // BASE
 
 // import compass
-@import "compass/css3";
-@import "compass/css3/images";
-@import "compass/typography/lists/inline-block-list";
-@import "modules/breakpoints";
-@import "modules/mixins";
+@import "../compass/compass/css3";
+@import "../compass/compass/css3/images";
+@import "../compass/compass/typography/lists/inline-block-list";
+
+@import "../modules/breakpoints";
+@import "../modules/mixins";
 
 // fonts
 $heading-font-family: "Roboto Condensed", sans-serif; // imported from google font

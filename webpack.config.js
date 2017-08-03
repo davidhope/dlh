@@ -1,5 +1,14 @@
 var path = require('path')
 var webpack = require('webpack')
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+
+/*
+const extractSass = new ExtractTextPlugin({
+    filename: "/assets/js/styles.css",
+    disable: process.env.NODE_ENV === "development"
+});
+*/
+const extractSass = new ExtractTextPlugin("./assets/css/styles.css");
 
 module.exports = {
   entry: './src/main.js',
@@ -35,12 +44,30 @@ module.exports = {
         options: {
           name: '[name].[ext]?[hash]'
         }
+      },
+      {
+        test: /\.scss$/,
+        //loaders: ["style-loader", "css-loader", "sass-loader"]
+        use: extractSass.extract({
+            use: [
+              {loader: "css-loader"}, 
+              {
+                loader: "sass-loader",
+                options: {
+                    includePaths: path.resolve(__dirname, "sass")
+                }
+              }
+            ],
+            // use style-loader in development
+            fallback: "style-loader"
+        })
       }
     ]
   },
   resolve: {
     alias: {
-      'vue$': 'vue/dist/vue.esm.js'
+      'vue$': 'vue/dist/vue.esm.js'//,
+      //'sass': path.resolve(__dirname, "./sass")
     }
   },
   devServer: {
@@ -50,7 +77,14 @@ module.exports = {
   performance: {
     hints: false
   },
-  devtool: '#eval-source-map'
+  devtool: '#eval-source-map',
+  /*sassLoader: {
+    data: '@import "main-one-page";',
+    includePaths: [
+      path.resolve(__dirname, "./sass")
+    ]
+  }*/
+  plugins: [extractSass]
 }
 
 if (process.env.NODE_ENV === 'production') {
