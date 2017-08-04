@@ -11,6 +11,34 @@
 *	############################################################################
 */
 
+
+$font-path: "../assets/fonts/" !default;
+$font-family: "fontawesome" !default;
+$image-path: "../assets/img/" !default;
+
+/*
+$arrow-color: white !default;
+$dot-color: black !default;
+$dot-color-active: $slick-dot-color !default;
+$prev-character: "←" !default;
+$next-character: "→" !default;
+$dot-character: "•" !default;
+$dot-size: 6px !default;
+$opacity-default: 0.75 !default;
+$opacity-on-hover: 1 !default;
+$opacity-not-active: 0.25 !default;
+*/
+
+@function image-url($url) {
+	@return url($image-path + $url);
+}
+
+@function font-url($url) {
+     @return url($font-path + $url);
+}
+
+
+
 // import general styles and variables
 @import "partials/base";
 @import "partials/general";

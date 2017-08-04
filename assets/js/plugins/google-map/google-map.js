@@ -3,7 +3,7 @@
 	function loadScript() {
 		var script = document.createElement('script');
 		script.type = 'text/javascript';
-		script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBbJ16uUP1tqA_-qsojvMCBV12V71rukHA&sensor=true&' +
+		script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBbJ16uUP1tqA_-qsojvMCBV12V71rukHA&' +
 			'callback=initialize';
 		document.body.appendChild(script);
 	}
@@ -131,17 +131,19 @@
 			codeAddress(customMap);
 		}
 
+		/*
 		mapPlaceholder = document.getElementById('map-canvas');
 
 		if(mapPlaceholder) {
 			defaultMap = new google.maps.Map(mapPlaceholder, mapOptions);
 			codeAddress(defaultMap);
 		}
+		*/
 	}
 
 	function codeAddress(theMap) {
 	
-		var address = "Google New York, 76 Ninth Ave, New York, NY, USA";
+		var address = "Springfield IL, USA";
 		geocoder.geocode( { 'address': address}, function(results, status) {
 			if (status == google.maps.GeocoderStatus.OK) {
 				theMap.setCenter(results[0].geometry.location);
