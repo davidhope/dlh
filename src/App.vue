@@ -3,25 +3,26 @@
     
     <Navigation></Navigation>
     
+    <DLHHeader></DLHHeader>
+
     <About></About>
     
-    <DLHHeader></DLHHeader>
-    
-
     <div class="heading-center">
-      <h2 class="section-heading">ABOUT US</h2>
-      <img src="assets/img/logo/repute-logo-nav-slategray.png">
-      <p class="lead">Getting to know us better</p>
-      <hr>
+      <h2 class="section-heading">{{ msg }}</h2>
     </div>
 
-    <p>{{ msg }}</p>
+    <Services></Services>
     
+    <!--
     <Testimonials></Testimonials>
-
     <Pricing></Pricing>
-
     <Portfolio></Portfolio>
+    -->
+    <Contact></Contact>
+
+    <DLHFooter></DLHFooter>
+
+    <BackToTop></BackToTop>
 
   </div>
 </template>
@@ -35,10 +36,13 @@ import DLHHeader from './components/dlh-header.vue'
 import About from './components/dlh-about.vue'
 import Testimonials from './components/dlh-testimonials.vue'
 import Services from './components/dlh-services.vue'
+import DLHFooter from './components/dlh-footer.vue'
+import Contact from './components/dlh-contact.vue'
+import BackToTop from './components/dlh-back-to-top.vue'
 
 export default {
   name: 'app',
-  components: { Navigation, Pricing, Portfolio, DLHHeader, About, Testimonials, Services },
+  components: { Navigation, Pricing, Portfolio, DLHHeader, About, Testimonials, Services, DLHFooter, Contact, BackToTop },
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'

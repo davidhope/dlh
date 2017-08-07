@@ -3,18 +3,17 @@
 	<section id="about">
 		<div class="container">
 		
-
 			<br>
-			<h3 class="section-heading text-center">MEET OUR TEAM</h3>
+			<h3 class="section-heading text-center">Who We Are</h3>
 			<!-- TEAM -->
 			<section class="team">
 				<div class="section-content">
 					<div class="col-md-5">
 						<div class="team-member media">
-							<img src="assets/img/team/person1.png" class="media-object img-circle pull-left" alt="" />
+							<img src="assets/img/team/dave.png" class="media-object img-circle pull-left" alt="" />
 							<div class="media-body">
-								<h3 class="media-heading team-name">Michael Summer</h3>
-								<strong>Executive Director</strong>
+								<h3 class="media-heading team-name">Dave Hope</h3>
+								<strong>CEO</strong>
 								<hr class="pull-left">
 								<div class="clearfix"></div>
 								<p>Dynamically evolve client-based portals through world-class models. Phosfluorescently simplify cross-platform convergence and multimedia based portals. Rapidiously.</p>
@@ -27,81 +26,6 @@
 									</li>
 									<li>
 										<a href="#"><i class="fa fa-linkedin"></i></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-5 col-md-offset-2">
-						<div class="team-member media">
-							<img src="assets/img/team/person2.png" class="media-object img-circle pull-left" alt="" />
-							<div class="media-body">
-								<h3 class="media-heading team-name">Jane Doe</h3>
-								<strong>Art Director</strong>
-								<hr class="pull-left">
-								<div class="clearfix"></div>
-								<p>Dynamically evolve client-based portals through world-class models. Phosfluorescently simplify cross-platform convergence and multimedia based portals. Rapidiously.</p>
-								<ul class="list-inline social-icon">
-									<li>
-										<a href="#"><i class="fa fa-facebook"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="fa fa-twitter"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="fa fa-linkedin"></i></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-5">
-						<div class="team-member media">
-							<img src="assets/img/team/person3.png" class="media-object img-circle pull-left" alt="" />
-							<div class="media-body">
-								<h3 class="media-heading team-name">Cindy Marry</h3>
-								<strong>UI Designer</strong>
-								<hr class="pull-left">
-								<div class="clearfix"></div>
-								<p>Dynamically evolve client-based portals through world-class models. Phosfluorescently simplify cross-platform convergence and multimedia based portals. Rapidiously.</p>
-								<ul class="list-inline social-icon">
-									<li>
-										<a href="#"><i class="fa fa-facebook"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="fa fa-twitter"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="fa fa-linkedin"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="fa fa-dribbble"></i></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-5 col-md-offset-2">
-						<div class="team-member media">
-							<img src="assets/img/team/person4.png" class="media-object img-circle pull-left" alt="" />
-							<div class="media-body">
-								<h3 class="media-heading team-name">Phillips Abraham</h3>
-								<strong>Front-end Developer</strong>
-								<hr class="pull-left">
-								<div class="clearfix"></div>
-								<p>Dynamically evolve client-based portals through world-class models. Phosfluorescently simplify cross-platform convergence and multimedia based portals. Rapidiously.</p>
-								<ul class="list-inline social-icon">
-									<li>
-										<a href="#"><i class="fa fa-facebook"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="fa fa-twitter"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="fa fa-linkedin"></i></a>
-									</li>
-									<li>
-										<a href="#"><i class="fa fa-dribbble"></i></a>
 									</li>
 								</ul>
 							</div>

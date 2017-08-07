@@ -8,8 +8,8 @@
 					<div class="container">
 						<div class="hero-left pull-left">
 							<div class="hero-text">
-								<h2 class="hero-heading animated fadeIn animation-delay-5">CLEAN &amp; ELEGANT DESIGN</h2>
-								<p class="lead animated fadeIn animation-delay-7">Giving valuable reputation and credibility to your business</p>
+								<h2 class="hero-heading animated fadeIn animation-delay-5">INNOVATIVE USER EXPERIENCE</h2>
+								<p class="lead animated fadeIn animation-delay-7">Clean, responsive, and intuitive applications</p>
 							</div>
 							<a href="#about" class="btn btn-info btn-lg hero-button animated fadeIn animation-delay-12">LEARN MORE</a>
 						</div>

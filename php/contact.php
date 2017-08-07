@@ -1,7 +1,43 @@
 <?php
+require_once('inc/environment-vars.php');
+require('../vendor/autoload.php');
 
 // hide all basic notices from PHP
 error_reporting(E_ALL ^ E_NOTICE); 
+
+use Mailgun\Mailgun;
+
+function getMailGunClient($isPrivate = true){
+    if($isPrivate){
+        return new Mailgun(MG-API-PRI-KEY);
+    }else{
+        return new Mailgun(MG-API-PUB-KEY);
+    }
+}
+
+function sendMailGunEmail($subject, $body, $email){
+    try{
+
+    	//$client = getMailGunClient();
+
+    	$client = new Mailgun(MG-API-PRI-KEY, new \Http\Adapter\Guzzle6\Client());
+
+        $res = $client->sendMessage(MG-DOMAIN, array(
+                                                        'from'          => NO-REPLY-FROM, 
+                                                        'h:Reply-To'    => $email,
+                                                        'to'            => MAIL-TO, 
+                                                        'subject'       => $subject, 
+                                                        'html'          => $body
+                                                    )
+                                    );
+        
+	    return $res;
+        
+    }
+    catch(Exception $e){
+        throw new Exception($e->getMessage());
+    }
+}
 
 if( isset($_POST['msg-submitted']) ) {
 	$name = $_POST['name'];
@@ -13,6 +49,14 @@ if( isset($_POST['msg-submitted']) ) {
 	if( trim($name) === '' ) {
 		$nameError = 'Please provide your name.';
 		$hasError = true;
+	}
+
+	if( trim($subject) === '' ) {
+		$subject = "No Subject Submitted";
+	} else {
+		if( function_exists( 'stripslashes' ) ) {
+			$subject = stripslashes( trim( $subject ) );
+		}
 	}
 
 	if( trim($email) === '' ) {
@@ -34,12 +78,10 @@ if( isset($_POST['msg-submitted']) ) {
 		
 	if(!isset($hasError)) {
 		
-		$emailTo = 'dave@dlhtech.net';
+		$body = "Name: $name \n\nEmail: $email \n\nSubject: $subject \n\nMessage: $message";
 		$subject = 'New Submitted Message From: ' . $name;
-		$body = "Name: $name \n\nEmail: $email \n\nMessage: $message";
-		$headers = 'From: ' .' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email;
 
-		mail($emailTo, $subject, $body, $headers);
+		sendMailGunEmail($subject, $body, $email);
 		
 		$message = 'Thank you ' . $name . ', your message has been submitted.';
 		$result = true;
