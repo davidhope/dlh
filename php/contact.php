@@ -1,14 +1,11 @@
 <?php
+require_once('inc/environment-vars.php');
+require('../vendor/autoload.php');
 
 // hide all basic notices from PHP
 error_reporting(E_ALL ^ E_NOTICE); 
 
-require '../vendor/autoload.php';
-require 'inc/environment-vars.php';
-
 use Mailgun\Mailgun;
-
-
 
 
 if( isset($_POST['msg-submitted']) ) {
@@ -24,7 +21,13 @@ if( isset($_POST['msg-submitted']) ) {
 	}
 
 	if( trim($subject) === '' ) {
+
 		$subject = 'New Submitted Message From: ' . $name;
+
+	} else {
+		if( function_exists( 'stripslashes' ) ) {
+			$subject = stripslashes( trim( $subject ) );
+		}
 	}
 
 	if( trim($email) === '' ) {
@@ -57,6 +60,7 @@ if( isset($_POST['msg-submitted']) ) {
 		    'subject' => 'New Messge from DLH Tech',
 		    'text'    => "Name: $name \n\nEmail: $email \n\nSubject: $subject \n\nMessage: $message"
 		));
+
 		
 		$message = 'Thank you ' . $name . ', your message has been submitted.';
 		$result = true;
