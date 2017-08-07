@@ -3,6 +3,14 @@
 // hide all basic notices from PHP
 error_reporting(E_ALL ^ E_NOTICE); 
 
+require '../vendor/autoload.php';
+require 'inc/environment-vars.php';
+
+use Mailgun\Mailgun;
+
+
+
+
 if( isset($_POST['msg-submitted']) ) {
 	$name = $_POST['name'];
 	$email = $_POST['email'];
@@ -13,6 +21,10 @@ if( isset($_POST['msg-submitted']) ) {
 	if( trim($name) === '' ) {
 		$nameError = 'Please provide your name.';
 		$hasError = true;
+	}
+
+	if( trim($subject) === '' ) {
+		$subject = 'New Submitted Message From: ' . $name;
 	}
 
 	if( trim($email) === '' ) {
@@ -34,12 +46,17 @@ if( isset($_POST['msg-submitted']) ) {
 		
 	if(!isset($hasError)) {
 		
-		$emailTo = 'dave@dlhtech.net';
-		$subject = 'New Submitted Message From: ' . $name;
-		$body = "Name: $name \n\nEmail: $email \n\nMessage: $message";
-		$headers = 'From: ' .' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email;
+		$mg = new Mailgun(MG_PRI_API_KEY);
+		$domain = MG_DOMAIN;
 
-		mail($emailTo, $subject, $body, $headers);
+		# Make the call to the client.
+		$result = $mg->sendMessage($domain, array(
+		    'from'    => 'dlhtech <no-reply@dlhtech.net>',
+		    'h:Reply-To' => $email,
+		    'to'      => 'Dave Hope<dave@dlhtech.net>',
+		    'subject' => 'New Messge from DLH Tech',
+		    'text'    => "Name: $name \n\nEmail: $email \n\nSubject: $subject \n\nMessage: $message"
+		));
 		
 		$message = 'Thank you ' . $name . ', your message has been submitted.';
 		$result = true;
@@ -60,6 +77,7 @@ if( isset($_POST['msg-submitted']) ) {
 	header("Content-type: application/json");
 	echo json_encode( array( 'message' => $message, 'result' => $result ));
 	die();
+
 }
 
 

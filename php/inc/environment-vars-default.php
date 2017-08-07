@@ -1,6 +1,6 @@
 <?php
 	/*Mailgun API*/
-	define("MG-KEY","[KEY]");
-  	define("MG-API-KEY","[API-KEY]");
+	define("MG-PUBLIC-API-KEY","[KEY]");
+  	define("MG-PRIVATE-API-KEY","[API-KEY]");
     define("MG-DOMAIN","[DOMAIN]");
 ?>
