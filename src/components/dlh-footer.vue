@@ -7,7 +7,7 @@
 					<!-- COLUMN 1 -->
 					<h3 class="sr-only">ABOUT US</h3>
 					<img src="assets/img/logo/repute-logo-light.png" class="logo" alt="Repute">
-					<p>Proactively aggregate B2B initiatives before extensive channels. Monotonectally extend interactive methods of empowerment through excellent applications. Rapidiously synergize visionary products with sticky technology.</p>
+					<p>Delivering quality solutions in the public sector. We work with your teams to deliver the solution that works for you on your agency's terms.</p>
 					<br>
 					<address class="margin-bottom-30px">
 						<ul class="list-unstyled">
@@ -89,7 +89,7 @@
 								<a href="#" class="twitter-bg"><i class="fa fa-twitter"></i></a>
 							</li>
 							<li>
-								<a href="#" class="googleplus-bg"><i class="fa fa-google-plus"></i></a>
+								<a href="https://plus.google.com/u/1/101432528558871764628" class="googleplus-bg"><i class="fa fa-google-plus"></i></a>
 							</li>
 							<li>
 								<a href="#" class="rss-bg"><i class="fa fa-rss"></i></a>
