@@ -8,7 +8,11 @@
 					<i class="fa fa-bars"></i>
 				</button>
 				<a href="index.html" class="navbar-brand navbar-logo">
-					<img src="assets/img/logo/repute-logo-nav.png" alt="Repute - Responsive Bootstrap Business Theme">
+					<span class="fa-stack fa-lg">
+					  <i class="fa fa-square-o fa-stack-2x"></i>
+					  <i class="fa fa-database fa-stack-1x"></i>
+					</span>
+					DLH Technology Solutions
 				</a>
 			</div>
 			<!-- MAIN NAVIGATION -->

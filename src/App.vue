@@ -6,10 +6,6 @@
     <DLHHeader></DLHHeader>
 
     <About></About>
-    
-    <div class="heading-center">
-      <h2 class="section-heading">{{ msg }}</h2>
-    </div>
 
     <Services></Services>
     

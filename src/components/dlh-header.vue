@@ -9,7 +9,7 @@
 						<div class="hero-left pull-left">
 							<div class="hero-text">
 								<h2 class="hero-heading animated fadeIn animation-delay-5">INNOVATIVE USER EXPERIENCE</h2>
-								<p class="lead animated fadeIn animation-delay-7">Clean, responsive, and intuitive applications</p>
+								<p class="lead animated fadeIn animation-delay-7">Painstaking innovation to promise the best user experience possible.</p>
 							</div>
 							<a href="#about" class="btn btn-info btn-lg hero-button animated fadeIn animation-delay-12">LEARN MORE</a>
 						</div>
@@ -22,8 +22,8 @@
 					<div class="container">
 						<div class="hero-left pull-left">
 							<div class="hero-text">
-								<h2 class="hero-heading animated fadeIn animation-delay-5">ULTRA RESPONSIVE</h2>
-								<p class="lead animated fadeIn animation-delay-7">Leave it to the theme, it knows how to deal with screen sizes</p>
+								<h2 class="hero-heading animated fadeIn animation-delay-5">RESPONSIVE DESIGNS</h2>
+								<p class="lead animated fadeIn animation-delay-7">Web based applications that can be used across multiple devices</p>
 							</div>
 							<a href="#about" class="btn btn-info btn-lg hero-button animated fadeIn animation-delay-12">LEARN MORE</a>
 						</div>
@@ -36,8 +36,8 @@
 					<div class="container">
 						<div class="hero-left pull-left">
 							<div class="hero-text">
-								<h2 class="hero-heading animated fadeIn animation-delay-5">EASY TO CUSTOMIZE</h2>
-								<p class="lead animated fadeIn animation-delay-7">Readable code, well documented and FREE support</p>
+								<h2 class="hero-heading animated fadeIn animation-delay-5">QUALITY DATA</h2>
+								<p class="lead animated fadeIn animation-delay-7">Outstanding UI leads to higher adaptibility and better data coming into your systems.</p>
 							</div>
 							<a href="#about" class="btn btn-info btn-lg hero-button animated fadeIn animation-delay-12">LEARN MORE</a>
 						</div>

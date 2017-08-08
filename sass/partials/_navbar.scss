@@ -83,7 +83,7 @@
 
 .navbar-brand {
 	padding: 12px 15px;
-
+	height: auto;
 	> img {
 		width: 100px;
 	}
@@ -121,7 +121,7 @@
 		i {
 			color: #fff;
 			font-size: 21px;
-			line-height: 25px;
+			line-height: 35px;
 		}
 	}
 
@@ -142,7 +142,7 @@
 	> li > a {
 		font-weight: 600;
 		color: $heading-text-color;
-
+		line-height: 35px;
 		&:hover, &:focus {
 			color: $link-hover-color;
 		}

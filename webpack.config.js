@@ -41,7 +41,8 @@ module.exports = {
             use: [
               {loader: "css-loader"}, 
               {loader: "sass-loader"}
-            ]
+            ],
+            fallback: "style-loader"
         })
       }
       

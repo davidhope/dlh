@@ -6,13 +6,20 @@
 				<div class="col-md-4">
 					<!-- COLUMN 1 -->
 					<h3 class="sr-only">ABOUT US</h3>
-					<img src="assets/img/logo/repute-logo-light.png" class="logo" alt="Repute">
+
+					<a href="index.html">
+						<span class="fa-stack fa-lg">
+						  <i class="fa fa-square-o fa-stack-2x"></i>
+						  <i class="fa fa-database fa-stack-1x"></i>
+						</span>
+						DLH Technology Solutions
+					</a>
+
 					<p>Delivering quality solutions in the public sector. We work with your teams to deliver the solution that works for you on your agency's terms.</p>
 					<br>
 					<address class="margin-bottom-30px">
 						<ul class="list-unstyled">
-							<li>4521 Barrington Dr
-								<br/> Springfield, IL 62711</li>
+							<li>Springfield, IL</li>
 							<li>Phone: (217) 553 - 2841</li>
 							<li>Email: dave@dlhtech.net</li>
 						</ul>
