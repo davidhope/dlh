@@ -14,7 +14,7 @@
 							<a href="#about" class="btn btn-info btn-lg hero-button animated fadeIn animation-delay-12">LEARN MORE</a>
 						</div>
 						<div class="hero-right pull-right">
-							<img src="assets/img/hero-unit-obj.png" class="animated fadeInRight animation-delay-9" alt="Repute Business Theme">
+							<img src="assets/img/laptop.png" class="animated fadeInRight animation-delay-9" alt="Repute Business Theme">
 						</div>
 					</div>
 				</div>
@@ -28,7 +28,7 @@
 							<a href="#about" class="btn btn-info btn-lg hero-button animated fadeIn animation-delay-12">LEARN MORE</a>
 						</div>
 						<div class="hero-right pull-right">
-							<img src="assets/img/hero-unit-obj2.png" class="animated fadeInRight animation-delay-9" alt="Repute Business Theme">
+							<img src="assets/img/devices.png" class="animated fadeInRight animation-delay-9" alt="Repute Business Theme">
 						</div>
 					</div>
 				</div>
