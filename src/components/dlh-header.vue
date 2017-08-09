@@ -42,7 +42,7 @@
 							<a href="#about" class="btn btn-info btn-lg hero-button animated fadeIn animation-delay-12">LEARN MORE</a>
 						</div>
 						<div class="hero-right pull-right">
-							<img src="assets/img/hero-unit-obj3.png" class="animated fadeInRight animation-delay-9" alt="Repute Business Theme">
+							<img src="assets/img/data.png" class="animated fadeInRight animation-delay-9" alt="Repute Business Theme">
 						</div>
 					</div>
 				</div>
