@@ -3,7 +3,7 @@
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-md-6">
 					<!-- COLUMN 1 -->
 					<h3 class="sr-only">ABOUT US</h3>
 
@@ -17,93 +17,24 @@
 
 					<p>Delivering quality solutions in the public sector. We work with your teams to deliver the solution that works for you on your agency's terms.</p>
 					<br>
-					<address class="margin-bottom-30px">
-						<ul class="list-unstyled">
-							<li>Springfield, IL</li>
-							<li>Phone: (217) 553 - 2841</li>
-							<li>Email: dave@dlhtech.net</li>
-						</ul>
-					</address>
+					
 					<!-- END COLUMN 1 -->
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-6">
 					<!-- COLUMN 2 -->
-					<h3 class="footer-heading">USEFUL LINKS</h3>
+					<h3 class="footer-heading">CONTACT</h3>
 					<div class="row margin-bottom-30px">
 						<div class="col-xs-6">
-							<ul class="list-unstyled footer-nav">
-								<li>
-									<a href="#">About Us</a>
-								</li>
-								<li>
-									<a href="#">News</a>
-								</li>
-								<li>
-									<a href="#">Community</a>
-								</li>
-								<li>
-									<a href="#">Career</a>
-								</li>
-								<li>
-									<a href="#">Blog</a>
-								</li>
-							</ul>
-						</div>
-						<div class="col-xs-6">
-							<ul class="list-unstyled footer-nav">
-								<li>
-									<a href="#">Press Kit</a>
-								</li>
-								<li>
-									<a href="#">FAQ</a>
-								</li>
-								<li>
-									<a href="#">Terms</a>
-								</li>
-								<li>
-									<a href="#">Privacy Policy</a>
-								</li>
-								<li>
-									<a href="#">Contact Us</a>
-								</li>
-							</ul>
+							<address class="margin-bottom-30px">
+								<ul class="list-unstyled">
+									<li>Springfield, IL</li>
+									<li>Phone: (217) 553 - 2841</li>
+									<li>Email: dave@dlhtech.net</li>
+								</ul>
+							</address>
 						</div>
 					</div>
 					<!-- END COLUMN 2 -->
-				</div>
-				<div class="col-md-4">
-					<!-- COLUMN 3 -->
-					<div class="newsletter">
-						<h3 class="footer-heading">NEWSLETTER</h3>
-						<p>Get the latest update from us by subscribing to our newsletter.</p>
-						<form class="newsletter-form" method="POST" action="../php/mailchimp.php">
-							<div class="input-group input-group-lg">
-								<input type="email" class="form-control" name="email" placeholder="youremail@domain.com">
-								<span class="input-group-btn">
-									<button class="btn btn-primary" type="button"><i class="fa fa-spinner fa-spin"></i><span>SUBSCRIBE</span></button>
-								</span>
-							</div>
-							<div class="alert"></div>
-						</form>
-					</div>
-					<div class="social-connect">
-						<h3 class="footer-heading">GET CONNECTED</h3>
-						<ul class="list-inline social-icons">
-							<li>
-								<a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a>
-							</li>
-							<li>
-								<a href="#" class="twitter-bg"><i class="fa fa-twitter"></i></a>
-							</li>
-							<li>
-								<a href="https://plus.google.com/u/1/101432528558871764628" class="googleplus-bg"><i class="fa fa-google-plus"></i></a>
-							</li>
-							<li>
-								<a href="#" class="rss-bg"><i class="fa fa-rss"></i></a>
-							</li>
-						</ul>
-					</div>
-					<!-- END COLUMN 3 -->
 				</div>
 			</div>
 		</div>
